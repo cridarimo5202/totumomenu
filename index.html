@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Restaurantes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con espacio para imagen -->
+        <header class="header">
+            <div class="header-image">
+                <!-- OPCIÓN 1: Usar una imagen -->
+                <!-- Descomenta la siguiente línea y añade tu imagen -->
+                <!-- <img src="logo-restaurante.png" alt="Menú Restaurantes" class="logo-image"> -->
+                
+                <!-- OPCIÓN 2: Texto temporal (comenta esta línea cuando tengas imagen) -->
+                <span class="placeholder-text">Menú Restaurantes</span>
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Botón Menú Navidad -->
+            <a href="cafe.html" class="menu-button navidad-button">
+                <div class="button-content">
+                    <span class="button-subtitle">Menú</span>
+                    <span class="button-title">NAVIDAD</span>
+                </div>
+            </a>
+
+            <!-- ====== TUTORIAL: CÓMO AÑADIR MÁS BOTONES ====== -->
+            <!-- 
+            PASO 1: Copia el bloque de código desde aquí:
+            
+            <a href="infantil.html" class="menu-button infantil-button">
+                <div class="button-content">
+                    <span class="button-subtitle">Menú</span>
+                    <span class="button-title">INFANTIL</span>
+                </div>
+            </a>
+            
+            PASO 2: Cambia estos valores:
+            - href="infantil.html" → nombre del archivo al que quieres ir
+            - class="infantil-button" → nombre único para el botón
+            - Los textos "Menú" e "INFANTIL" por los que necesites
+            
+            PASO 3: En el CSS (arriba, después de línea 112), añade:
+            
+            .tu-nombre-button {
+                background: linear-gradient(to right, #COLOR1, #COLOR2);
+            }
+            
+            .tu-nombre-button .button-subtitle,
+            .tu-nombre-button .button-title {
+                color: #COLOR-TEXTO;
+            }
+            -->
+        </main>
+    </div>
+</body>
+</html>
