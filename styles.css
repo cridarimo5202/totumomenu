@@ -158,6 +158,55 @@ body {
     text-align: center;
 }
 
+/* Estilos para items con descripción (Batidos) */
+.menu-item-with-description {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(120, 53, 15, 0.2);
+}
+
+.menu-item-with-description:last-child {
+    border-bottom: none;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.item-header .item-name {
+    font-weight: bold;
+    color: #78350f;
+    font-size: 1rem;
+}
+
+.item-header .item-price {
+    font-weight: bold;
+    color: #78350f;
+    font-size: 1rem;
+}
+
+.item-description {
+    font-size: 0.875rem;
+    color: #92400e;
+    line-height: 1.4;
+    margin: 0;
+    padding-right: 1rem;
+}
+
+/* Responsivo para descripciones */
+@media (max-width: 320px) {
+    .item-description {
+        font-size: 0.75rem;
+    }
+    
+    .item-header .item-name,
+    .item-header .item-price {
+        font-size: 0.875rem;
+    }
+}
+
 /* Responsivo para pantallas muy pequeñas */
 @media (max-width: 320px) {
     .menu-title {
