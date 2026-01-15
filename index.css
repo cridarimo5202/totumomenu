@@ -69,6 +69,31 @@ body {
     position: relative;
 }
 
+.menu-button2 {
+    display: block;
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.menu-button2 .button-title {
+    font-size: 1.8rem;
+    padding-left: 1rem; /* Ajusta el valor según necesites */
+}
+
+.button-subtitle-custom {
+    font-size: 2rem;
+    color: #78350f;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
+
 .menu-button:hover {
     transform: scale(1.05);
 }
@@ -123,6 +148,45 @@ body {
     color: #d1fae5;
 }
 
+/* Estilos para imágenes en los botones */
+.button-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Si quieres solo imagen sin texto */
+.button-content img.button-icon-full {
+    width: 100%;
+    height: 100%;
+    max-height: 160px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+/* Alternativa: imagen de fondo */
+.menu-button.with-bg-image {
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.menu-button.with-bg-image .button-content {
+    background: linear-gradient(to bottom, rgba(254, 243, 199, 0.85), rgba(254, 215, 170, 0.85));
+}
+
+/* Ajustar el espaciado cuando hay imagen + texto */
+.button-content.with-icon {
+    gap: 0.5rem;
+}
+
+/* Para que el texto sea más legible sobre imágenes */
+.button-content.with-icon .button-title {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
 /* Responsivo para pantallas muy pequeñas */
 @media (max-width: 320px) {
     .button-title {
@@ -133,3 +197,4 @@ body {
         font-size: 1.25rem;
     }
 }
+
